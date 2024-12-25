@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoTokenizer Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+         <!--Side bar ke Vaaste-->
+        <aside class="nav">
+            <h2>CryptoTokenizer</h2>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Crypto</a></li>
+                <h4>APPS & UI</h4>
+                <li><a href="#">Apps</a></li>
+                <li><a href="#">UI Elements</a></li>
+                <li><a href="#">Forms Elements</a></li>
+                <h4>Pages</h4>
+                <li><a href="#">Authentication</a></li>
+                <li><a href="#">Miscellaneous</a></li>
+                <li><a href="#">Sample Pages</a></li>
+            </ul>
+        </aside>
+
+<!-- Nav baar Ke Vaaste  -->
+        <header class="navbar">
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="navbar-icons">
+                <i class="fas fa-bell" title="Notifications"></i>
+                <i class="fas fa-user" title="User"></i>
+                <i class="fas fa-cog" title="Settings"></i>
+            </div>
+        </header>
+<!-- info part-->
+        <div class="info-bar">
+            <div>
+                <h4>ETH / BTC</h4>
+            </div>
+            <div>
+                  <span>Last:</span>
+                  <span style="color: #0000FF;">0.03242000</span>
+            </div>
+            <div>
+                  <span>24High:</span>
+                  <span style="color: #00ff00;">0.03301357</span>
+            </div>
+            <div>
+                  <span>24Low:</span>
+                  <span style="color: #ff0000;">0.03089614</span>
+            </div>
+            <div>
+                  <span>24V:</span>
+                  <span style="color: #00FFFF;">1001.66BTC</span>
+            </div>
+            <!-- buyer section keliye-->
+            <aside class="buy-section">
+                <h3>Buy</h3>
+                <div class="tabs">
+                    <button class="tab active" >Market</button>
+                    <button class="tab">Limit</button>
+                    <button  class="tab">Stop</button>
+                </div>
+                <div class="buy-form">
+                    <select id="order-type">
+                        <option value="gtc">Good-Til-Canceled</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+                        <option>Option 5</option>
+                    </select>
+                    <div class="info">
+                      <p><strong>Balance:</strong> 0 B</p>
+                      <p><strong>Best Ask:</strong> 0.000001234 B</p>
+                    </div>
+                    <label>Amount: <input type="number" id="amount" placeholder="0"></label>
+                    
+                    <label>Price: <input type="text" id="price" placeholder="Bitcoin per 1"></label>
+                    
+                    <label>Total: <input type="text" id="total" placeholder="Bitcoin"></label>
+                    
+                    <div class="fees">
+                      <p>Fee: 0.1% <span>0 B</span></p>
+                      <p>Rebate: 0.01% <span>0 B</span></p>
+                      <p>Reserved <span>0 B</span></p>
+                    </div>
+                    <button class="buy-button">Buy Limit</button>
+                </div>
+            </aside>
+        </div>
+ <!-- for center graph part-->       
+        <div class="trading-graph">
+            <div class="y-axis">
+              <span>6660.00</span>
+              <span>6650.00</span>
+              <span>6640.00</span>
+              <span>6630.00</span>
+              <span>6620.00</span>
+              <span>6610.00</span>
+              <span>6600.00</span>
+              <span>6590.00</span>
+              <span>6580.00</span>
+              <span>6570.00</span>
+              <span>6560.00</span>
+            </div>
+            <div class="chart">
+                <div class="grid-lines"></div>
+                <div class="candlestick red" style="left: 10%; height: 80px; top: 40px;"></div>
+                <div class="candlestick blue" style="left: 20%; height: 100px; top: 20px;"></div>
+                <div class="candlestick red" style="left: 30%; height: 60px; top: 60px;"></div>
+                <div class="candlestick blue" style="left: 40%; height: 90px; top: 30px;"></div>
+                <div class="candlestick red" style="left: 50%; height: 70px; top: 50px;"></div>
+                <div class="candlestick blue" style="left: 60%; height: 110px; top: 10px;"></div>
+            </div>
+            <div class="x-axis">
+              <span>23:00</span>
+              <span>03:00</span>
+              <span>06:00</span>
+              <span>09:00</span>
+              <span>12:00</span>
+              <span>15:00</span>
+              <span>18:00</span>
+              <span>21:00</span>
+              <span>07 Oct</span>
+              <span>04:00</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
